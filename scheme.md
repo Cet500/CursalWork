@@ -28,8 +28,20 @@
 - id
 - id_client
 - id_account_type
-- number
+- account_number ( 0000 0000 0000 0000 0000 )
 - balance
+- account_data_open
+
+**clients_cards**
+
+- id
+- id_client_account
+- id_card_type
+- card_number ( 0000 0000 0000 0000 )
+- card_data_open
+- card_cvc
+- card_name
+- card_lastname
 
 **clients_passports**
 
@@ -52,7 +64,8 @@
 
 - id
 - id_client
-- 
+- id_credit_type
+- pay_sum
 
 
 ## === Workers block ========================
@@ -106,6 +119,21 @@
 - description
 - tasks
 
+**data_credit_types**
+
+- id
+- name
+- description
+- credit_sum
+- credit_percent
+
+**data_card_types**
+
+- id
+- name
+- description
+- max_sum
+
 
 ## === Geo block ========================
 
@@ -143,34 +171,3 @@
 - id_department
 - balance
 - is_work
-
-
-
-
-# Что есть?
-
-* клиенты
-	- счета
-	- карты
-	- вклады
-	- кредиты
-	- переводы
-		- внутри банка
-		- внешние банки
-	- траты
-	- начисления
-
-* сотрудники
-	- должность
-	- отдел
-	- подчинённые сотрудники
-
-* информация
-	- курсы валют
-	- предоставляемые услуги
-	- денежные потоки
-
-* отделения
-	- позиция
-	- сотрудники
-	- банкоматы
