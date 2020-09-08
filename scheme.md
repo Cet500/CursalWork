@@ -15,6 +15,7 @@
 - street
 - num_house
 - num_flat
+- datatime_reg
 
 **clients_telefons**
 
@@ -26,7 +27,7 @@
 
 - id
 - id_client
-- type
+- id_account_type
 - number
 - balance
 
@@ -34,7 +35,24 @@
 
 - id
 - id_client
-- pass_
+- pass_name
+- pass_lastname
+- pass_patronymic
+- pass_personal_code
+- pass_num ( 00 00 )
+- pass_serial ( 000000 )
+- pass_issued_by
+- pass_date_of_issue
+- pass_subdivition_code ( 000-000 )
+- pass_date_of_birch
+- pass_place_of_birch
+- pass_photo
+
+**clients_credits**
+
+- id
+- id_client
+- 
 
 
 ## === Workers block ========================
@@ -75,6 +93,19 @@
 - salary
 - work_schedule
 
+**data_account_types**
+
+- id
+- type
+- description
+
+**data_otdel_names**
+
+- id
+- name
+- description
+- tasks
+
 
 ## === Geo block ========================
 
@@ -103,8 +134,7 @@
 
 - id
 - id_department
-- name
-- description
+- id_otdel_name
 - work_spaces
 
 **coverage_bankomats**
