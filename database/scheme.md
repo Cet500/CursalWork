@@ -5,17 +5,19 @@
 
 **clients**
 
-- id            | PK | increment
-- name          |    | char(50)
-- lastname      |    | char(50)
-- patronymic    |    | char(50)
-- sex           |    | char(1)
-- data_of_birth |    | data( date )
-- id_city       | FK | longint
-- street        |    | char(60)
-- num_house     |    | int
-- num_flat      |    | int
-- datetime_reg  |    | date( datetime_stamp )
+- id            | A | PK | increment
+- name          | R |    | char(50)
+- lastname      | R |    | char(50)
+- patronymic    |   |    | char(50)
+- sex           | R |    | char(1)
+- data_of_birth | R |    | data( date )
+- id_city       | R | FK | longint
+- street        | R |    | char(60)
+- num_house     | R |    | int
+- litera_house  |   |    | char(1)
+- num_flat      | R |    | int
+- post_index    |   |    | char( 000000 )
+- datetime_reg  | A |    | date( datetime_stamp )
 
 **clients_accounts**
 
@@ -82,7 +84,9 @@
 - id_city       | FK | longint
 - street        |    | char(60)
 - num_house     |    | int(0)
-- num_flat      |    | int(0)
+- litera_house  |    | char(1)
+- num_flat      |    | int
+- post_index    |    | char( 000000 )
 - datetime_reg  |    | date( datetime_stamp )
 
 **workers_otdels**
@@ -139,7 +143,7 @@
 
 ## === Geo block ========================
 
-**geo_city**
+**geo_cities**
 
 - id         | PK | increment
 - id_country | FK | longint
@@ -149,6 +153,12 @@
 
 - id      | PK | increment
 - country |    | char(50)
+
+**geo_streets**
+
+- id      | PK | increment
+- id_city | FK | longint
+- street  |    | char(50)
 
 
 ## === Сoverage block ========================

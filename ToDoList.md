@@ -27,7 +27,11 @@
 
 - update scheme DB
 - update DB
+- create all tables in DB
+- create links tables in DB
 
 *Plans*
 
 - ( ) requires columns
+- ( ) geo_streets
+- ( ) buttons forms and data forms
