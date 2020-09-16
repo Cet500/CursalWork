@@ -16,3 +16,18 @@
 - created GitHub repository
 - created tables in Access DB
 - created ToDoList.md
+
+*Plans*
+
+- (+) types of columns
+
+## 16.09.2020
+
+*Sergo*
+
+- update scheme DB
+- update DB
+
+*Plans*
+
+- ( ) requires columns
