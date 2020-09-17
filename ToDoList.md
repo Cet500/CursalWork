@@ -44,7 +44,11 @@
 - add all placeholders
 - add all require columns
 - hotfixes DB
+- rename some tables and columns for usability
+- update DB
+- add forms
 
 *Plans*
 
 - (+) placeholders
+- ( ) all forms
