@@ -1,5 +1,6 @@
 # DB
 
+
 ## === Info ====
 
 **Abbraviatures**
@@ -17,6 +18,7 @@ P - Placeholder
 M - Mask
 F - File
 L - List of variants
+
 
 ## === Clients block ========================
 
@@ -119,14 +121,6 @@ L - List of variants
 
 ## === Data block ========================
 
-**data_posts**
-
-- id            | A | PK |   | increment
-- post          | R |    |   | char(60)
-- description   |   |    |   | text
-- salary        | R |    |   | money
-- work_schedule | R |    |   | text
-
 **data_account_types**
 
 - id            | A | PK |   | increment
@@ -134,27 +128,36 @@ L - List of variants
 - description   |   |    |   | text
 - max_money_sum | R |    |   | money
 
-**data_otdel_names**
+**data_cards**
 
-- id          | A | PK |   | increment
-- name        | R |    |   | char(40)
-- description |   |    |   | text
-- tasks       |   |    |   | text
+- id                  | A | PK |   | increment
+- card_type           | R |    |   | char(20)
+- description         |   |    |   | text
+- max_money_operation | R |    |   | money
 
-**data_credit_types**
+**data_credits**
 
 - id             | A | PK |   | increment
-- name           | R |    |   | char(40)
+- credit_type    | R |    |   | char(40)
 - description    |   |    |   | text
 - credit_sum     | R |    |   | money
 - credit_percent | R |    |   | int( percent )
+- credit_months  | R |    |   | int
 
-**data_card_types**
+**data_otdels**
 
-- id                  | A | PK |   | increment
-- name                | R |    |   | char(20)
-- description         |   |    |   | text
-- max_money_operation | R |    |   | money
+- id          | A | PK |   | increment
+- otdel       | R |    |   | char(40)
+- description |   |    |   | text
+- tasks       |   |    |   | text
+
+**data_posts**
+
+- id            | A | PK |   | increment
+- post          | R |    |   | char(60)
+- description   |   |    |   | text
+- salary        | R |    |   | money
+- work_schedule | R |    |   | text
 
 
 ## === Geo block ========================
