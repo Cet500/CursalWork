@@ -32,6 +32,19 @@
 
 *Plans*
 
-- ( ) requires columns
-- ( ) geo_streets
+- (+) requires columns
+- (+) geo_streets
 - ( ) buttons forms and data forms
+
+## 17.09.2020
+
+*Sergo*
+
+- add geo_street
+- add all placeholders
+- add all require columns
+- hotfixes DB
+
+*Plans*
+
+- (+) placeholders
