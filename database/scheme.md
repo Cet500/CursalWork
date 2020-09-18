@@ -18,6 +18,7 @@ P - Placeholder
 M - Mask
 F - File
 L - List of variants
+C - Calculate
 
 RA - Russian alias ( NOT NAME )
 
@@ -63,7 +64,7 @@ RA - Russian alias ( NOT NAME )
 - id             | A | PK |   |    | increment
 - id_client      | R | FK | P | RA | longint
 - id_credit_type | R | FK | P | RA | longint
-- pay_sum        | A |    |   | RA | money
+- pay_sum        | A |    | C | RA | money
 
 **clients_passports**
 
