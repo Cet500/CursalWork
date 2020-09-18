@@ -34,7 +34,7 @@
 
 - (+) requires columns
 - (+) geo_streets
-- ( ) buttons forms and data forms
+- (+) buttons forms and data forms
 
 ## 17.09.2020
 
@@ -51,7 +51,7 @@
 *Plans*
 
 - (+) placeholders
-- ( ) all forms
+- (+) all forms
 
 ## 18.09.2020
 
@@ -64,6 +64,8 @@
 - add easters eggs
 - add all aliases
 - update and fix of scheme DB
+- add last data and buttons forms
+- set main buttons form as default on start
 
 *Plans*
 
