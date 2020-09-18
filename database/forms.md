@@ -16,8 +16,14 @@
 
 ## === Clients forms block ========================
 
+**clients_form**
+
+**clients_form_accounts_cards**
+
 
 ## === Workers forms block ========================
+
+**workers_form**
 
 
 ## === Data forms block ========================
