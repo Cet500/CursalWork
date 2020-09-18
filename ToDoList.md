@@ -52,3 +52,19 @@
 
 - (+) placeholders
 - ( ) all forms
+
+## 18.09.2020
+
+*Sergo*
+
+- add some data
+- fix of persents
+- add forms
+- add aliases
+- add easters eggs
+- add all aliases
+- update and fix of scheme DB
+
+*Plans*
+
+- (+) all aliases
