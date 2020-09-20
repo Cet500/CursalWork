@@ -70,3 +70,11 @@
 *Plans*
 
 - (+) all aliases
+
+## 20.09.2020
+
+*Sergo*
+
+- start work on report
+- add legacy reports as example for future work
+- add base file of report
