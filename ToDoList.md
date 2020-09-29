@@ -78,3 +78,10 @@
 - start work on report
 - add legacy reports as example for future work
 - add base file of report
+
+## 29.09.2020
+
+*Sergo*
+
+- update a report
+- add grafic scheme of DB and renders
