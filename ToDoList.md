@@ -92,3 +92,6 @@
 *Sergo*
 
 - update README
+- add report in format .docx
+- add new screenshots
+- FINAL UPDATE REPORT
