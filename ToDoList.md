@@ -83,5 +83,12 @@
 
 *Sergo*
 
-- update a report
+- update report
 - add grafic scheme of DB and renders
+- update and relocate a docs
+
+## 30.09.2020
+
+*Sergo*
+
+- update README
