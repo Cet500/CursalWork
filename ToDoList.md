@@ -95,3 +95,11 @@
 - add report in format .docx
 - add new screenshots
 - FINAL UPDATE REPORT
+
+## 06.10.2020
+
+*Sergo*
+
+- postupdate: add data in DB
+- postupdate: add report in DB
+- postupdate: add scheme of reports
