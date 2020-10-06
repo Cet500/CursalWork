@@ -103,3 +103,8 @@
 - postupdate: add data in DB
 - postupdate: add report in DB
 - postupdate: add scheme of reports
+- postupdate: update of report.md
+
+*Plans*
+
+- ( ) update report ( about reports in DB )
