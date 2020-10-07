@@ -117,3 +117,4 @@
 - postupdate: update report in format docx
 - postupdate: add reports in DB
 - postupdate: add data in DB
+- postupdate: update main buttons form
