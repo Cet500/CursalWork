@@ -1,7 +1,7 @@
 # DB
 
 
-## === Info ====
+## === [en] Info ====
 
 **Abbraviatures**
 
@@ -22,9 +22,33 @@ C - Calculate
 
 RA - Russian alias ( NOT NAME )
 
+## === [ru] Информация ====
+
+**Расшифровка аббравиатур свойств полей**
+
+A - Автоматически заполняемое поле, по-умолчанию обязательно к заполнению
+R - Обязательное к заполнению поле
+
+PK - Первичный ключ
+FK - Внешний ключ ( связь - один ко многим )
+FU - Уникальный внешний ключ ( связь - один к одному )
+IU - Уникальный индекс
+IN - Не уникальный индекс, с повторениями
+
+P - Поле с подменой значения ( заполнителем )
+M - Поле с маской ( форматом ) заполнения
+F - Поле с файлом
+L - Поле со списоком значений
+C - Вычисляемое поле
+
+RA - Русское название ( не имя поля, а лишь внешняя надпись )
+
+
 ## === Clients block ========================
 
 **clients**
+
+Таблица с базовыми данными о клиентах.
 
 - id            | A | PK |   |    | increment
 - name          | R |    |   | RA | char(50)
@@ -39,7 +63,11 @@ RA - Russian alias ( NOT NAME )
 - post_index    |   |    | M | RA | char( 000000 )
 - datetime_reg  | A |    |   |    | date( datetime_stamp )
 
+---
+
 **clients_accounts**
+
+Таблица с счетами клиентов.
 
 - id                | A | PK |   |    | increment
 - id_client         | R | FK | P | RA | longint
@@ -48,7 +76,11 @@ RA - Russian alias ( NOT NAME )
 - balance           | A |    |   | RA | money
 - account_date_open | A |    |   | RA | date( date_stamp )
 
+---
+
 **clients_cards**
+
+Таблица с картами, выданными клиентам банка.
 
 - id                | A | PK |   |    | increment
 - id_client_account | R | FK | P | RA | longint
@@ -59,14 +91,22 @@ RA - Russian alias ( NOT NAME )
 - card_name         | R |    |   | RA | char(50)
 - card_lastname     | R |    |   | RA | char(50)
 
+---
+
 **clients_credits**
+
+Таблица с кредитами, выданными клиентам банка.
 
 - id             | A | PK |   |    | increment
 - id_client      | R | FK | P | RA | longint
 - id_credit_type | R | FK | P | RA | longint
 - pay_sum        | A |    | C | RA | money
 
+---
+
 **clients_passports**
+
+Таблица с паспортными данными клиентов.
 
 - id                    | A | PK |   |    | increment
 - id_client             | R | FU | P | RA | longint
@@ -84,7 +124,11 @@ RA - Russian alias ( NOT NAME )
 - pass_photo            |   |    | F | RA | OLE
 - pass_date_add         | A |    |   |    | date( date_stamp )
 
+---
+
 **clients_telefons**
+
+Таблица с телефонами клиентов.
 
 - id        | A | PK |   |    | increment
 - id_client | R | FK | P | RA | longint
@@ -94,6 +138,8 @@ RA - Russian alias ( NOT NAME )
 ## === Workers block ========================
 
 **workers**
+
+Таблица с базовыми данными о сотрудниках.
 
 - id            | A | PK |   |    | increment
 - name          | R |    |   | RA | char(50)
@@ -108,13 +154,21 @@ RA - Russian alias ( NOT NAME )
 - post_index    |   |    | M | RA | char( 000000 )
 - datetime_reg  | A |    |   |    | date( datetime_stamp )
 
+---
+
 **workers_otdels**
+
+Таблица-связка между сотрудниками и отделами, в которых они работают.
 
 - id        | A | PK |   |    | increment
 - id_worker | R | FK | P | RA | longint
 - id_otdel  | R | FK | P | RA | longint
 
+---
+
 **workers_posts**
+
+Таблица-связка между сотрудниками и их должностями.
 
 - id        | A | PK |   |    | increment
 - id_worker | R | FK | P | RA | longint
@@ -125,19 +179,29 @@ RA - Russian alias ( NOT NAME )
 
 **data_accounts**
 
+Таблица, содержащая перечень типов счетов, доступных для открытия клиентами.
+
 - id            | A | PK |   |    | increment
 - account_type  | R |    |   | RA | char(20)
 - description   |   |    |   | RA | text
 - max_money_sum | R |    |   | RA | money
 
+---
+
 **data_cards**
+
+Таблица, содержащая перечень типов банковских карт, доступных для выдачи клиентам.
 
 - id                  | A | PK |   |    | increment
 - card_type           | R |    |   | RA | char(20)
 - description         |   |    |   | RA | text
 - max_money_operation | R |    |   | RA | money
 
+---
+
 **data_credits**
+
+Таблица, содержащая перечень типов кредитов, доступных для выдачи клиентам.
 
 - id             | A | PK |   |    | increment
 - credit_type    | R |    |   | RA | char(40)
@@ -146,14 +210,22 @@ RA - Russian alias ( NOT NAME )
 - credit_percent | R |    |   | RA | int
 - credit_months  | R |    |   | RA | int
 
+---
+
 **data_otdels**
+
+Таблица, содержащая перечень типов отделов, в которых могут работать сотрудники.
 
 - id          | A | PK |   |    | increment
 - otdel       | R |    |   | RA | char(40)
 - description |   |    |   | RA | text
 - tasks       |   |    |   | RA | text
 
+---
+
 **data_posts**
+
+Таблица, содержащая перечень должностей, доступных сотрудникам.
 
 - id            | A | PK |   |    | increment
 - post          | R |    |   | RA | char(60)
@@ -166,16 +238,26 @@ RA - Russian alias ( NOT NAME )
 
 **geo_cities**
 
+Таблица со всеми городами, используемыми в базе данных.
+
 - id         | A | PK |   |    | increment
 - id_country | R | FK | P | RA | longint
 - city       | R |    |   | RA | char(50)
 
+---
+
 **geo_countries**
+
+Таблица со всеми странами, используемыми в базе данных.
 
 - id      | A | PK |   |    | increment
 - country | R | IU |   | RA | char(50)
 
+---
+
 **geo_streets**
+
+Таблица со всеми улицами, используемыми в базе данных.
 
 - id      | A | PK |   |    | increment
 - id_city | R | FK | P | RA | longint
@@ -186,12 +268,18 @@ RA - Russian alias ( NOT NAME )
 
 **coverage_bankomats**
 
+Таблица с данными обо всех подключенных банкоматах.
+
 - id            | A | PK |   |    | increment
 - id_department | R | FK | P | RA | longint
 - balance       | A |    |   | RA | money
 - is_work       | A |    |   | RA | boolean
 
+---
+
 **coverage_departments**
+
+Таблица с данными обо всех отделениях, в которых работают сотрудники.
 
 - id           | A | PK |   |    | increment
 - id_street    | R | FK | P | RA | longint
@@ -199,7 +287,11 @@ RA - Russian alias ( NOT NAME )
 - num_house    | R |    |   | RA | int
 - litera_house |   |    |   | RA | char(1)
 
+---
+
 **coverage_otdels**
+
+Таблица с данными обо всех отделах, в которых работают сотрудники.
 
 - id            | A | PK |   |    | increment
 - id_department | R | FK | P | RA | longint
