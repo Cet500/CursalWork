@@ -19,7 +19,7 @@
 
 *Plans*
 
-- (+) types of columns
+- [+] types of columns
 
 ## 16.09.2020
 
@@ -32,9 +32,9 @@
 
 *Plans*
 
-- (+) requires columns
-- (+) geo_streets
-- (+) buttons forms and data forms
+- [+] requires columns
+- [+] geo_streets
+- [+] buttons forms and data forms
 
 ## 17.09.2020
 
@@ -50,8 +50,8 @@
 
 *Plans*
 
-- (+) placeholders
-- (+) all forms
+- [+] placeholders
+- [+] all forms
 
 ## 18.09.2020
 
@@ -69,7 +69,7 @@
 
 *Plans*
 
-- (+) all aliases
+- [+] all aliases
 
 ## 20.09.2020
 
@@ -107,7 +107,7 @@
 
 *Plans*
 
-- (+) update report ( about reports in DB )
+- [+] update report ( about reports in DB )
 
 ## 07.10.2020
 
