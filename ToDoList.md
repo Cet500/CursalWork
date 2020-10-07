@@ -107,4 +107,13 @@
 
 *Plans*
 
-- ( ) update report ( about reports in DB )
+- (+) update report ( about reports in DB )
+
+## 07.10.2020
+
+*Sergo*
+
+- postupdate: update report in format md
+- postupdate: update report in format docx
+- postupdate: add reports in DB
+- postupdate: add data in DB
