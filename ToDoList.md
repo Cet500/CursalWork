@@ -118,3 +118,9 @@
 - postupdate: add reports in DB
 - postupdate: add data in DB
 - postupdate: update main buttons form
+
+## 08.10.2020
+
+*Sergo*
+
+- postupdate: add data in DB
