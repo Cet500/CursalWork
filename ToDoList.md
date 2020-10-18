@@ -124,3 +124,14 @@
 *Sergo*
 
 - postupdate: add data in DB
+
+## 18.10.2020
+
+*Project*
+
+- change GitHub repository to public
+
+*Sergo*
+
+- change repository visibility from private to public
+- add license, type - MIT
